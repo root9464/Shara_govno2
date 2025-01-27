@@ -9,7 +9,12 @@ export type Post = {
 };
 
 export default function App() {
-  const [createPost, setCreatePost] = useState<Post[] | null>(null);
+  const [createPost, setCreatePost] = useState<Post[] | null>([
+    {
+      title: 'Hello world!',
+      body: 'This is a post',
+    },
+  ]);
 
   console.log(createPost);
 
